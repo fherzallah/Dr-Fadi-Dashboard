@@ -20,7 +20,7 @@ const AddPublication = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/publications", formData, {
+      const response = await axios.post("https://portfolio-backend-87lm.onrender.com/publications", formData, {
         headers: {
           "Content-Type": "application/json",
         },

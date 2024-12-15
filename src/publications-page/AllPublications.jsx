@@ -18,7 +18,7 @@ const PublicationTable = () => {
   useEffect(() => {
     const fetchPublications = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/publications");
+        const response = await axios.get("https://portfolio-backend-87lm.onrender.com/publications");
         setPublications(response.data);
       } catch (error) {
         console.error("Error fetching publications:", error);
@@ -39,7 +39,7 @@ const PublicationTable = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://localhost:3000/publications/${selectedPublication._id}`,
+        `https://portfolio-backend-87lm.onrender.com/publications/${selectedPublication._id}`,
         formData
       );
       alert("Publication updated successfully!");
@@ -73,7 +73,7 @@ const PublicationTable = () => {
     const confirmDelete = window.confirm("Are you sure you want to delete this publication?");
     if (confirmDelete) {
       try {
-        await axios.delete(`http://localhost:3000/publications/${id}`);
+        await axios.delete(`https://portfolio-backend-87lm.onrender.com/publications/${id}`);
         setPublications(publications.filter((pub) => pub._id !== id));
         alert("Publication deleted successfully!");
       } catch (error) {
