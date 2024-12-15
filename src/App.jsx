@@ -24,7 +24,7 @@ const router = createBrowserRouter(
       ),
     },
   ],
-  { basename: '/Dr-Fadi-Herzallah-portfolio' } // Set your base path here
+  { basename: '/Dr-Fadi-Dashboard' } // Set your base path here
 );
 
 function App() {
