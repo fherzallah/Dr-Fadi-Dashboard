@@ -79,7 +79,7 @@ const AddPublication = () => {
           </div>
         ))}
 
-        {/* Type field */}
+        {/* Type of Field*/}
         <div className="mb-4">
           <label htmlFor="type" className="block text-gray-700 font-medium mb-2">
             Type
