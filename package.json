@@ -2,7 +2,6 @@
   "name": "dr--fadi-herzallah",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://fherzallah.github.io/Dr-Fadi-Dashboard",
   "type": "module",
   "scripts": {
     "dev": "vite",
